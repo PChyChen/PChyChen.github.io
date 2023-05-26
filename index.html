@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Digitals by Aithy Nguyen </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> Cameras </a></li>
+                        <li><a href="#"> Memories </a></li>
+                        <li><a href="#"> Connect </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+        <div class="text-box">
+            <h1> Digitals -
+                <br> by Aithy Nguyen </h1>
+        </div>
+        </section>
+
+<!-- cameras -->
+        <section class="cameras">
+            <h1> My Cameras </h1>
+            <p>
+                The ones that do it all.
+            </p>
+
+            <div class="row">
+                <div class="cameras-col">
+                    <h3> Sony Digital Camera </h3>
+                    <p> Sony Cyber-Shot DSC-T99 14.1MP </p>
+                </div>
+                <div class="cameras-col">
+                    <h3> Panasonic Digital Camera </h3>
+                    <p> Panasonic Lumix DMC-LZ7, 7.2 Megapixel </p>
+                </div>
+                <div class="cameras-col">
+                    <h3> Disposible Film Cameras </h3>
+                    <p> Fujifilm Quicksnap 
+                        <br> Kodak Fun Saver
+                        <br> Ilford Ilfocolor
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<!-- memories -->
+        <section class="memories">
+            <h1> Milestones and Memories </h1>
+
+            <div class="row">
+                <div class="memories-col">
+                    <img src="test1.png">
+                    <div class="layer">
+                        <h3> TEST 1 </h3>
+                    </div>
+                </div>
+                <div class="memories-col">
+                    <img src="test2.png">
+                    <div class="layer">
+                        <h3> TEST 2 </h3>
+                    </div>
+                </div>
+                <div class="memories-col">
+                    <img src="test3.png">
+                    <div class="layer">
+                        <h3> TEST 3 </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect">
+            <h1> Feel free to shoot me a message! </h1>
+            <a href="#" class="hero-btn"> Connect With Me </a>
+        </section>
+
+<!-- footer -->
+        <section class="footer">
+            <h4> About Me </h4>
+            <p> WRITE SMTH IG?? </p>
+            <div class="icons">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-github"></i>
+            </div>
+            <p> Made with love </p>
+        </section>
+
+
+<!-- JS for Toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+<!-- 
+        <header> 
+        <h2> A Girl With Her Parents' Old Cameras ·:* ♡ ¨༺ </h2>
+        <p> 
+            These cameras have captured so many memories growing up, so why not continue this tradition :) 
+        </p>
+        <p> 
+            Hello! My name is Aithy Nguyen, a Management Engineering student at the University of Waterloo.
+            Inspired by interest in photopgrahy (and a little free time on my hands)
+            I coded this website to showcase all these memories!
+        </p>
+        </header>
+
+        <h2> <center> ₊‧｡ ✩ ˚ -- My Cameras -- ˚ ✩ ｡‧₊ </center> </h2>
+        <p> 
+            <center> The ones that do it all </center>
+            <br> Sony Cyber-Shot DSC-T99 14.1MP Digital Camera
+            <br> Panasonic Lumix DMC-LZ7, 7.2 Megapixel Digital Camera 
+            <br> Disposibles - (Fuji, Kodak, Colorx) model ... 27 shots of fun with each camera (we can find out in 3-5 business days)
+            <br> Special Mentions
+                - Tenzin and her Canon ... 
+                - Angela and her Canon ... 
+                - Jewel and her Canon ... 
+                - SHOWCASE A PHOTO OF EVERYONE HOLDING THEIR CAMERAS
+            <br> # add these side by side in a scroll gallery view both ways
+            <br> # model name underneath and click on it for full description, left camera, right words
+        </p>
+
+        <h2> <center> ₊˚ ✩ ｡⋆ -- Memories and Milestones -- ⋆｡ ✩ ˚₊ </center> </h2>
+        <p> 
+            # blocks of photo albums
+            <br> # put the descriptions ontop of the photo in the center ykwim
+            <br> # each album with link to "another" page where they will be displayed in gallery view
+            <br> # beneath each photo, the camera model will be shown
+        </p>
+        
+        <h2> Connect With Me ·:* ♡ ¨༺ </h2>
+        <p> 
+            Feel free to shoot me a message! We're just one message away from getting to know each other :)
+            <br> # link instagram, personal account and camera account
+            <br> # link linkedin
+            <br> # link github, with the code to this website
+            <br> # link notion page where i blog down my progress
+        </p>
+    </body>
+
+</html>
+
+<hr> </hr>
+NOTES FOR WEBSITE CREATION
+<br> # intro page, try and find baby photos taken on that camera
+<br> list out
+    - toronto adventures
+    - florida
+    - snow time fun
+    - spring fever
+    - vietnam
+
+<br> # look up wix templates that photographers use and format similarly
+
+<br> # captions for specific posts
+    - title of photo / context of photo
+    - date taken
+
+<br> # three side by side photos showcasing the cameras with captions underneath each one
+
+<br> # create a google drive called photography
+<br> # create each sub album in that drive
+
+-->
